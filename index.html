@@ -8,15 +8,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header id="splash">
+    <header>
       <h1>Pilot Projekt Website</h1>
       <h2>Kira's Salon</h2>
-      <nav>
-        <ul>
-          <li><a href="#billeder">Billeder</a></li>
-          <li><a href="#video">Video</a></li>
-        </ul>
-      </nav>
     </header>
     <main>
       <h2>Kira's passion</h2>
@@ -24,71 +18,41 @@
         Kira er frisør på et salon i København på Saxogade. Hendes salon er også
         et vintage legetøj butik.
       </p>
-      <h2 id="billeder">Billeder</h2>
-      <article>
+      <h2>Billeder</h2>
+      <article id="billeder">
         <p>Her har vi taget billeder af salonen og af Kira.</p>
-        <section>
-          <h3>Portræt</h3>
-          <img class="portraet" src="photos/portraet.webp" alt="portræt" />
+        <h3>Portræt</h3>
+        <section class="photos">
+          <img src="photos/portraet.webp" alt="portræt" />
         </section>
-        <section>
-          <h3>Baggrundsbillede</h3>
+        <h3>Baggrundsbillede</h3>
+        <section class="photos">
           <img src="photos/background.webp" alt="background" />
         </section>
-
-        <section>
-          <h3>Bred format billeder</h3>
-          <div class="bil_container">
-            <figure class="brede">
-              <img src="photos/bred1.webp" alt="bred 1" />
-            </figure>
-            <figure class="brede">
-              <img src="photos/bred2.webp" alt="bred 2" />
-            </figure>
-            <figure class="brede">
-              <img src="photos/bred4.webp" alt="bred 3" />
-            </figure>
-            <figure class="brede">
-              <img src="photos/bred6.webp" alt="bred 4" />
-            </figure>
-          </div>
+        <h3>Bred format billeder</h3>
+        <section class="photos">
+          <div id="bred_gallery" class="bred_gal"></div>
         </section>
-
-        <section>
-          <h3>Høj format billeder</h3>
-          <div class="bil_container">
-            <figure class="hoej">
-              <img src="photos/hoej3.webp" alt="høj 3" />
-            </figure>
-            <figure class="hoej">
-              <img src="photos/hoej2.webp" alt="høj 2" />
-            </figure>
-            <figure class="hoej">
-              <img src="photos/hoej1.webp" alt="høj 1" />
-            </figure>
-            <figure class="hoej">
-              <img src="photos/hoej8.webp" alt="høj 4" />
-            </figure>
-          </div>
+        <h3>Høj format billeder</h3>
+        <section class="photos">
+          <div id="hoej_gallery" class="hoej_gal"></div>
         </section>
       </article>
-      <h2 id="video">Video</h2>
+      <h2>Video</h2>
 
-      <article class="video_container">
-        <section>Interviewet af Kira</section>
-        <section>
+      <article>
+        <h3>Kira's Interview</h3>
+        <section id="video_container">
           <iframe
             width="560"
             height="315"
             src="https://www.youtube.com/embed/d36tHM1wtRA"
-            title="YouTube video player"
+            title="KIRA INTERVIEW"
             frameborder="0"
             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
-        </section>
-        <section>
-          <video width="400" controls>
+          <video width="560" controls>
             <source
               src="http://emsportfolio.dk/kea/05_indhold/01_pilot/video/gruppe17_emmapasquer.mp4"
               type="video/mp4"
