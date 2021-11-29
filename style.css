@@ -27,20 +27,21 @@ body {
   height: 700px;
   background-size: contain;
   display: grid;
-  grid-template-rows: 0.2fr 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-rows: 1fr 1fr 1fr;
   margin-bottom: 20px;
 }
 
 nav {
   display: flex;
-  flex-direction: column;
+  grid-row: 3;
+  grid-column: 2;
+  justify-content: space-between;
 }
 
 ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-bottom: 10px;
-  padding-top: 40px;
   text-decoration: none;
 }
 
@@ -50,21 +51,23 @@ a {
 }
 
 li {
+  text-decoration: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   font-size: 3rem;
 }
 
 h1 {
+  grid-column: 2;
   font-size: 4rem;
-  justify-self: center;
   color: limegreen;
+
 }
 
 header h2 {
+  grid-column: 2;
+  grid-row: 2;
   font-size: 4rem;
-  justify-self: center;
   color: greenyellow;
 }
 
@@ -72,8 +75,7 @@ h2 {
   padding-left: 5px;
   font-size: 2rem;
   color: blue;
-  padding-bottom: 15px;
-  padding-top: 20px;
+
 }
 
 h3 {
