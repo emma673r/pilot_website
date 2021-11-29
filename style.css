@@ -11,6 +11,7 @@
 img {
   height: auto;
   max-width: 100%;
+  display: block;
 }
 
 body {
@@ -21,10 +22,10 @@ body {
 }
 
 #splash {
-  background-image: url(photos/background.png);
+  background-image: url(photos/background.webp);
   width: 100%;
-  height: 800px;
-  background-size: cover;
+  height: 700px;
+  background-size: contain;
   display: grid;
   grid-template-rows: 0.2fr 1fr 1fr;
   margin-bottom: 20px;
@@ -113,4 +114,23 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   padding: 5px;
+}
+
+video {
+  width: 80%;
+  height: auto;
+  padding-left: 150px;
+  display: block;
+}
+
+iframe {
+  width: 80%;
+  height: auto;
+  padding-left: 150px;
+  padding-bottom: 100px;
+}
+
+.portraet {
+  width: 40%;
+  height: auto;
 }
